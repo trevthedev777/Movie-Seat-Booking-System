@@ -1,0 +1,73 @@
+/* Lato font : https: //fonts.google.com/specimen/Lato?query=lato */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lato:ital,wght@0,300;1,300&family=Nova+Square&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Zen+Kaku+Gothic+Antique:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #242333;
+    --color-secondary: #444451;
+    --color-selected: #6feaf6;
+    --color-reserved: #fff;
+}
+
+body {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select {
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    /* Remove dropdown arrow */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.seat {
+    background-color: var(--color-secondary);
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: var(--color-selected);
+}
+
+.seat.reserved {
+    background-color: var(--color-reserved);
+}
+
+/* separate first 2 columns */
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+/* seperate last two columns */
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+}
+
+.row {
+    display: flex;
+}
