@@ -71,8 +71,7 @@ body {
 }
 
 /* seperate last two columns */
-.seat:nth-last-of-type(2) {
-   
+.seat:nth-last-of-type(2) { 
     margin-left: 18px;
 }
 
