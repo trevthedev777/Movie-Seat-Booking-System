@@ -10,6 +10,7 @@
     --color-secondary: #444451;
     --color-selected: #6feaf6;
     --color-reserved: #fff;
+    --color-showcase: #777;
 }
 
 body {
@@ -41,6 +42,12 @@ body {
     appearance: none;
 }
 
+.container {
+    /* Tilt Screen : https: //developer.mozilla.org/en-US/docs/Web/CSS/perspective */
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
 .seat {
     background-color: var(--color-secondary);
     height: 12px;
@@ -65,9 +72,62 @@ body {
 
 /* seperate last two columns */
 .seat:nth-last-of-type(2) {
+   
     margin-left: 18px;
+}
+
+/* seat without reservation */
+.seat:not(.reserved):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* remove demo seats hover effect */
+.showcase .seat:not(.reserved):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+/* Showcase Section */
+.showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--color-showcase);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+/* Screen */
+.screen {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3 10px rgba(255, 255, 255, 0.7);
 }
 
 .row {
     display: flex;
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: var(--color-selected);
 }
