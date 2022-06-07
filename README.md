@@ -1,8 +1,8 @@
 # Movie Seat Booking System
 
-![Mock Up]()
+![Mock Up](https://github.com/trevthedev777/Movie-Seat-Booking-System/blob/master/assets/imgs/readme/01%20Interface.jpg?raw=true)
 
-[Movie Booking System Live Link]()
+[Movie Booking System Live Link](https://trevthedev777.github.io/Movie-Seat-Booking-System/)
 
 ## Description
 
@@ -20,7 +20,7 @@ The purpose of the project was to demonstate the cababilities of JavaScript func
     -   All functionality and interacitvity was created with JavaScript
 -   Github
     -   Source code pushed and stored on repo on github
-    -   [Movie Seat Booking System REPO](https://github.com/trevthedev777/Form-Validator)
+    -   [Movie Seat Booking System REPO](https://github.com/trevthedev777/Movie-Seat-Booking-System)
 -   VS Code
     -   This application was developed using VS Code on a windows laptop
 
@@ -32,8 +32,13 @@ The purpose of the project was to demonstate the cababilities of JavaScript func
 
 ## Testing
 
--   Functions and values were declared and tested by running the liveserver extension on VS Code. Then outputting <console.log(variable)> and viewing the data on the Chrome Developer Tools (F12 on application window)
+-   Functions and values were declared and tested by running the liveserver extension on VS Code. Then outputting <console.log(variable/event)> and viewing the data on the Chrome Developer Tools (F12 on application window)
 
 ## Bugs
 
-## Validation
+-   The state of the selected seat refreshes on reload, it is to retain that information, although the data is still stored to the local server, there isn't a know cause of the bug yet aas
+
+## Credits
+
+-   This is inspired by the Udemy course : 20 Vanilla JavaScript projects, presented by Brad Traversy
+-   [20 Vanilla JavaScript Projects](https://www.udemy.com/course/web-projects-with-vanilla-javascript/learn)
